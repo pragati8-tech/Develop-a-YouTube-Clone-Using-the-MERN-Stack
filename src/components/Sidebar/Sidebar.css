@@ -1,0 +1,113 @@
+.sidebar {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  height: calc(100vh - var(--header-height));
+  width: var(--sidebar-width);
+  background: var(--bg-primary);
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: transform 0.25s ease;
+  z-index: 50;
+  padding: 8px 0;
+  border-right: 1px solid var(--border);
+}
+
+.sidebar--closed {
+  transform: translateX(-100%);
+}
+.sidebar--open {
+  transform: translateX(0);
+}
+
+/* ── NAV ── */
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 1px 8px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.sidebar__item:hover {
+  background: var(--bg-hover);
+}
+
+.sidebar__icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.sidebar__label {
+  white-space: nowrap;
+}
+
+/* ── DIVIDER ── */
+.sidebar__divider {
+  height: 1px;
+  background: var(--border);
+  margin: 8px 16px;
+}
+
+/* ── SIGN IN PROMPT ── */
+.sidebar__signin-prompt {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar__signin-prompt p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+.sidebar__signin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 14px;
+  border: 1px solid #3ea6ff;
+  border-radius: 20px;
+  color: #3ea6ff;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s;
+  width: fit-content;
+}
+.sidebar__signin-btn:hover {
+  background: rgba(62, 166, 255, 0.1);
+}
+
+/* ── OVERLAY (mobile only) ── */
+.sidebar__overlay {
+  display: none;
+}
+
+/* ── RESPONSIVE ── */
+@media (min-width: 769px) {
+  /* Main content shifts when sidebar is open on desktop */
+  .sidebar--open {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar__overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 49;
+  }
+  .sidebar {
+    z-index: 50;
+  }
+}
