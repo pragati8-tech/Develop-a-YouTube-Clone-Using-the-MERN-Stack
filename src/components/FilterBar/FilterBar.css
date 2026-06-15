@@ -1,0 +1,51 @@
+/* Sticky filter bar below header */
+.filter-bar {
+  position: sticky;
+  top: var(--header-height); /* Stays below fixed header */
+  z-index: 40;
+  background: var(--bg-primary);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Horizontal scroll container for filter chips */
+.filter-bar__track {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 0 16px;
+
+  /* Hide scrollbar for cleaner UI */
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar in WebKit browsers */
+.filter-bar__track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual filter chip button */
+.filter-bar__chip {
+  flex-shrink: 0; /* Prevent chips from shrinking */
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap; /* Prevent text wrapping */
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+/* Hover effect for chips */
+.filter-bar__chip:hover {
+  background: #3a3a3a;
+}
+
+/* Active filter chip styling */
+.filter-bar__chip--active {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
