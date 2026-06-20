@@ -20,10 +20,10 @@ app.use(express.json());
 connectDB();
 
 // ── Routes ──
-// app.use("/api/auth", authRoutes);
-// app.use("/api/videos", videoRoutes);
-// app.use("/api/channels", channelRoutes);
-// app.use("/api/comments", commentRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/videos", videoRoutes);
+app.use("/api/channels", channelRoutes);
+app.use("/api/comments", commentRoutes);
 
 // ── Test route ──
 app.get("/", (req, res) => {
