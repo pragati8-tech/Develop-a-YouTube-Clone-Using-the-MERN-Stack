@@ -118,7 +118,9 @@
   border-radius: 8px;
 }
 
-.channel-form > button,
+.channel-form > button {
+  width: 100%;
+}
 .channel-form__actions {
   display: flex;
   justify-content: flex-end;

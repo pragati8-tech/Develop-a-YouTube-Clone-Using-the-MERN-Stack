@@ -28,7 +28,9 @@ export const createChannel = async (req, res) => {
       $push: { channels: channel._id },
     });
 
-    res.status(201).json(channel);
+    const populatedChannel = await channel.populate("owner", "username avatar");
+
+    res.status(201).json(populatedChannel);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

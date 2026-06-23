@@ -54,7 +54,9 @@ export const updateComment = async (req, res) => {
     }
 
     comment.text = text;
-    const updated = await comment.save();
+    await comment.save();
+
+    const updated = await comment.populate("userId", "username avatar");
 
     res.status(200).json(updated);
   } catch (error) {
