@@ -56,6 +56,7 @@ export const getChannelById = async (req, res) => {
 export const getMyChannel = async (req, res) => {
   try {
     const channel = await Channel.findOne({ owner: req.user._id })
+      .populate("owner", "username avatar")
       .populate("videos");
 
     if (!channel) {
@@ -81,9 +82,9 @@ export const updateChannel = async (req, res) => {
     }
 
     const { channelName, description, channelBanner } = req.body;
-    channel.channelName    = channelName    || channel.channelName;
-    channel.description     = description    ?? channel.description;
-    channel.channelBanner   = channelBanner  || channel.channelBanner;
+    channel.channelName = channelName || channel.channelName;
+    channel.description = description ?? channel.description;
+    channel.channelBanner = channelBanner || channel.channelBanner;
 
     const updated = await channel.save();
     res.status(200).json(updated);
