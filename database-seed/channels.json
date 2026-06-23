@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "6a36edbfd6da7d64f1c6452b"
+  },
+  "channelName": "wah wah kya baat hai",
+  "owner": {
+    "$oid": "6a36dc2c3260e967d52c2e55"
+  },
+  "description": "funny bate",
+  "channelBanner": "qwe",
+  "subscribers": 0,
+  "videos": [
+    {
+      "$oid": "6a36f0e725ce193f9b7beed9"
+    },
+    {
+      "$oid": "6a3a1d807e408a3f891bce1d"
+    },
+    {
+      "$oid": "6a3a1e7e7e408a3f891bce73"
+    },
+    {
+      "$oid": "6a3a1ff07e408a3f891bcf00"
+    },
+    {
+      "$oid": "6a3a20887e408a3f891bcf1d"
+    },
+    {
+      "$oid": "6a3a20f67e408a3f891bcf3a"
+    },
+    {
+      "$oid": "6a3a21877e408a3f891bcf67"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-06-20T19:45:03.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-23T06:02:47.234Z"
+  },
+  "__v": 8
+}]

@@ -1,0 +1,186 @@
+[{
+  "_id": {
+    "$oid": "6a36f0e725ce193f9b7beed9"
+  },
+  "title": "Learn React in 30 Minutes",
+  "description": "A quick tutorial to get started with React",
+  "thumbnailUrl": "https://picsum.photos/seed/react1/640/360",
+  "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+  "category": "React",
+  "channelId": {
+    "$oid": "6a36edbfd6da7d64f1c6452b"
+  },
+  "uploader": {
+    "$oid": "6a36dc2c3260e967d52c2e55"
+  },
+  "views": 15,
+  "likes": [],
+  "dislikes": [],
+  "createdAt": {
+    "$date": "2026-06-20T19:58:31.830Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-23T06:05:25.911Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a3a1d807e408a3f891bce1d"
+  },
+  "title": "JavaScript ES6 Crash Course",
+  "description": "Learn arrow functions, destructuring, and promises",
+  "thumbnailUrl": "https://picsum.photos/seed/js2/640/360",
+  "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+  "category": "JavaScript",
+  "channelId": {
+    "$oid": "6a36edbfd6da7d64f1c6452b"
+  },
+  "uploader": {
+    "$oid": "6a36dc2c3260e967d52c2e55"
+  },
+  "views": 4,
+  "likes": [],
+  "dislikes": [],
+  "createdAt": {
+    "$date": "2026-06-23T05:45:36.876Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-23T05:48:26.646Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a3a1e7e7e408a3f891bce73"
+  },
+  "title": "Top 5 Gaming Moments 2024",
+  "description": "Best highlights from this year",
+  "thumbnailUrl": "https://picsum.photos/seed/game2/640/360",
+  "videoUrl": "https://test-videos.co.uk/vids/sintel/mp4/h264/720/Sintel_720_10s_1MB.mp4",
+  "category": "Gaming",
+  "channelId": {
+    "$oid": "6a36edbfd6da7d64f1c6452b"
+  },
+  "uploader": {
+    "$oid": "6a36dc2c3260e967d52c2e55"
+  },
+  "views": 4,
+  "likes": [
+    {
+      "$oid": "6a36dc2c3260e967d52c2e55"
+    }
+  ],
+  "dislikes": [],
+  "createdAt": {
+    "$date": "2026-06-23T05:49:50.536Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-23T06:05:34.828Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "6a3a1ff07e408a3f891bcf00"
+  },
+  "title": "Relaxing Music for Studying",
+  "description": "Lo-fi beats to help you focus",
+  "thumbnailUrl": "https://picsum.photos/seed/music2/640/360",
+  "videoUrl": "https://samplelib.com/mp4/sample-5s.mp4",
+  "category": "Music",
+  "channelId": {
+    "$oid": "6a36edbfd6da7d64f1c6452b"
+  },
+  "uploader": {
+    "$oid": "6a36dc2c3260e967d52c2e55"
+  },
+  "views": 2,
+  "likes": [],
+  "dislikes": [],
+  "createdAt": {
+    "$date": "2026-06-23T05:56:00.783Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-23T05:56:04.273Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a3a20887e408a3f891bcf1d"
+  },
+  "title": "Today's Top News Headlines",
+  "description": "Daily news roundup",
+  "thumbnailUrl": "https://picsum.photos/seed/news2/640/360",
+  "videoUrl": "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
+  "category": "News",
+  "channelId": {
+    "$oid": "6a36edbfd6da7d64f1c6452b"
+  },
+  "uploader": {
+    "$oid": "6a36dc2c3260e967d52c2e55"
+  },
+  "views": 2,
+  "likes": [],
+  "dislikes": [],
+  "createdAt": {
+    "$date": "2026-06-23T05:58:32.485Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-23T05:58:36.871Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a3a20f67e408a3f891bcf3a"
+  },
+  "title": "Easy Pasta Recipe in 15 Minutes",
+  "description": "Quick and delicious dinner idea",
+  "thumbnailUrl": "https://picsum.photos/seed/cook2/640/360",
+  "videoUrl": "https://samplelib.com/mp4/sample-5s.mp4",
+  "category": "Cooking",
+  "channelId": {
+    "$oid": "6a36edbfd6da7d64f1c6452b"
+  },
+  "uploader": {
+    "$oid": "6a36dc2c3260e967d52c2e55"
+  },
+  "views": 4,
+  "likes": [],
+  "dislikes": [],
+  "createdAt": {
+    "$date": "2026-06-23T06:00:22.110Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-23T06:00:33.408Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a3a21877e408a3f891bcf67"
+  },
+  "title": "Hidden Travel Spots You Must Visit",
+  "description": "Exploring offbeat destinations",
+  "thumbnailUrl": "https://picsum.photos/seed/travel2/640/360",
+  "videoUrl": "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
+  "category": "Travel",
+  "channelId": {
+    "$oid": "6a36edbfd6da7d64f1c6452b"
+  },
+  "uploader": {
+    "$oid": "6a36dc2c3260e967d52c2e55"
+  },
+  "views": 0,
+  "likes": [],
+  "dislikes": [],
+  "createdAt": {
+    "$date": "2026-06-23T06:02:47.232Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-23T06:02:47.232Z"
+  },
+  "__v": 0
+}]

@@ -10,15 +10,19 @@ const VideoCard = ({ video }) => {
     videoId,
     title,
     thumbnailUrl,
-    channelName,
-    uploader,
     views,
     uploadDate,
+     createdAt,
     channelId,
+    uploader,
   } = video;
 
   // Use available video ID
   const id = _id || videoId;
+
+  // channelId aur uploader populated objects hain backend se
+  const channelName = channelId?.channelName;
+  const uploaderName = uploader?.username;
 
   return (
     // Navigate to video player page
@@ -47,7 +51,7 @@ const VideoCard = ({ video }) => {
       <div className="video-card__info">
         {/* Channel avatar (first letter) */}
         <div className="video-card__avatar">
-          {(channelName || uploader || "U").charAt(0).toUpperCase()}
+          {(channelName || uploaderName || "U").charAt(0).toUpperCase()}
         </div>
 
         <div className="video-card__meta">
@@ -56,17 +60,17 @@ const VideoCard = ({ video }) => {
 
           {/* Channel link */}
           <Link
-            to={channelId ? `/channel/${channelId}` : "#"}
+            to={channelId?._id ? `/channel/${channelId._id}` : "#"}
             className="video-card__channel"
             // Prevent parent Link navigation
             onClick={(e) => e.stopPropagation()}
           >
-            {channelName || uploader || "Unknown Channel"}
+            {channelName || uploaderName || "Unknown Channel"}
           </Link>
 
           {/* Views and upload time */}
           <p className="video-card__stats">
-            {formatViews(views)} &bull; {timeAgo(uploadDate)}
+            {formatViews(views)} &bull; {timeAgo(createdAt)}
           </p>
         </div>
       </div>

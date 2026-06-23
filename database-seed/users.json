@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "6a36dc2c3260e967d52c2e55"
+  },
+  "username": "Arjun sekhawat",
+  "email": "arjun@example.com",
+  "password": "$2b$10$C9idLjlHB4U/8Mbr3M2CXOEIPnxz2cgsRgdQ0y07OuSXoxvHIRJWO",
+  "avatar": "",
+  "channels": [
+    {
+      "$oid": "6a36edbfd6da7d64f1c6452b"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-06-20T18:30:04.475Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-20T19:45:03.701Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a3a175b7e408a3f891bcd73"
+  },
+  "username": "Priya",
+  "email": "priya@gmail.com",
+  "password": "$2b$10$M8P4xVJL86c/yhpr11p4q.6Bc3.7wTZ6HKQu1pFog3MOb54xeQND2",
+  "avatar": "",
+  "channels": [],
+  "createdAt": {
+    "$date": "2026-06-23T05:19:23.136Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-23T05:19:23.136Z"
+  },
+  "__v": 0
+}]
